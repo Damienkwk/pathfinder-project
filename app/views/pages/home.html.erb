@@ -2,8 +2,25 @@
 
 <div class="banner">
   <div class="banner-content text-center">
-    <h1>Change your life: learn to code!</h1>
-    <p>Le Wagon brings technical skills to creative people</p>
-    <%= link_to "Start now", new_user_session_path, class: "btn btn-lg btn-primary"  %>
+      <div class="row g-0 mb-2">
+        <div class="form-floating">
+          <input type="destination" class="form-control" id="destination" placeholder="destination">
+          <label for="destination">Destination</label>
+        </div>
+      </div>
+      <div class="row g-2">
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="start_date" class="form-control" id="start_date" placeholder="start_date" data-controller="flatpickr">
+            <label for="start_date">Start Date</label>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="end_date" class="form-control" id="end_date" placeholder="end_date" data-controller="flatpickr">
+            <label for="end_date">End Date</label>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
